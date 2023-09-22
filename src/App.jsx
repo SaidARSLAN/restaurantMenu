@@ -1,11 +1,13 @@
 import './App.css'
 import { Title,FilterNavbar,ProductList,Product,BuyBox,Footer } from './components'
+import InfoModal from './components/InfoModal'
 import { Provider } from './context/MainContext'
 function App() {
 
   return (
     <Provider>
     <main className='relative bg-white'>
+      <InfoModal />
       <section className='pt-12 pb-4 px-4'>
         <Title />
       </section>
