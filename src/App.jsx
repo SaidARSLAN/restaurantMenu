@@ -5,15 +5,17 @@ function App() {
 
   return (
     <Provider>
-    <main className='relative bg-amber-50/25'>
+    <main className='relative bg-white'>
       <section className='pt-12 pb-4 px-4'>
         <Title />
       </section>
-      <section className='py-4'>
+      <section className='flex flex-col lg:flex-row'>
+      <section className='py-4 px-4'>
         <FilterNavbar />
       </section>
-      <section className='py-12 px-4'>
+      <section className='px-4'>
         <ProductList />
+      </section>
       </section>
       <section className='py-12 px-4'>
         <Footer />

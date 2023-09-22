@@ -5,7 +5,7 @@ import Product from './Product'
 const ProductList = () => {
     const {filterFoods} = useContext(GlobalContext)
   return (
-    <div>
+    <div className='grid lg:grid-cols-2 lg:gap-x-12 grid-cols-1'>
         {filterFoods.map((food,idx) => {
                 return <Product food={food} key={idx}/>
         })}

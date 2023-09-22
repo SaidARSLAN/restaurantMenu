@@ -10,9 +10,13 @@ const FilterNavbar = () => {
     }
 
   return (
-    <nav className='flex w-full items-center justify-evenly'>
+    <nav className='flex w-full items-center justify-evenly lg:flex-col lg:items-start lg:space-y-4 '>
         {navbarLinks.map((link,idx) => {
-            return <a key={idx} className='text-xs bg-yellow-200 py-1 font-bold text-pink-900 cursor-pointer font-mono px-[4px]' onClick={handleFilterClick}>{link}</a>
+            return <a key={idx} className='text-xs bg-lemon py-1  text-dark cursor-pointer font-poppins px-[4px] 
+            
+            lg:px-12 lg:py-6 lg:text-center lg:w-[250px] lg:hover:bg-gray lg:duration-200 lg:hover:text-white lg:text-xl' onClick={handleFilterClick}
+        
+            >{link}</a>
         })}
     </nav>
   )
