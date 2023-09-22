@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Product = () => {
+const Product = ({food}) => {
   return (
-    <div>Product</div>
+    <div className='border-2 px-2 py-1 '>
+                    <div>{food.name}</div>
+                    <div>{food.ingredients}</div>
+                    <div>{food.type}</div>
+                </div>
   )
 }
 
