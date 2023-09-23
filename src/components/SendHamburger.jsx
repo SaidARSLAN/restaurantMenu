@@ -1,12 +1,33 @@
-import React from 'react'
-import { cooking } from '../contains'
+import React, { useEffect, useState } from 'react';
+import { cooking } from '../contains';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle, faRing, faSpinner, faTruckLoading } from '@fortawesome/free-solid-svg-icons';
 
-const SendHamburger = () => {
-  return (
-    <div className='flex flex-col w-full items-center lg:items-start justify-center'>
-        <img src={cooking} className='w-1/3 lg:w-2/3 my-4' />
-        </div>
-  )
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-export default SendHamburger
+const SendHamburger = () => {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        async function fetchData() {
+            await delay(4000); // Wait for 4 seconds
+            setLoading(false); // Set loading to false after the delay
+        }
+
+        fetchData();
+    }, []);
+
+    return (
+        <div className='flex flex-col w-full items-center lg:items-start justify-center'>
+            {loading ? (
+                <FontAwesomeIcon icon={faSpinner} className='animate-spin w-1/3 lg:w-2/3 my-4 h-10'></FontAwesomeIcon>
+            ) : (
+                <img src={cooking} className='w-1/3 lg:w-2/3 my-4' alt='Cooking' />
+            )}
+        </div>
+    );
+};
+
+export default SendHamburger;

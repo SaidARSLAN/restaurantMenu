@@ -4,7 +4,7 @@ import GlobalContext from '../context/MainContext'
 const HamburgerInfo = () => {
 
     const {data,sendData} = useContext(GlobalContext);
-    
+
     const [meat, setMeat] = useState("");
     const [cheese, setCheese] = useState("");
     const [salad, setSalad] = useState("off");
@@ -13,6 +13,7 @@ const HamburgerInfo = () => {
     const handleNext = () => {
       if (data.step < 3) {
         data.setStep(data.step + 1);
+        
         sendData(meat,cheese,salad,tomato,onion);
       }
     }
@@ -41,16 +42,16 @@ const HamburgerInfo = () => {
             <input type='checkbox' className='w-6' onClick={e=> setSalad(e.target.value)}/>
             </div>
             <div className='flex space-x-2'>
-            <label className='test-lg font-mulish' onClick={e=> setTomato(e.target.value)}>Tomato</label>
-            <input type='checkbox' className='w-6'/>
+            <label className='test-lg font-mulish' >Tomato</label>
+            <input type='checkbox' className='w-6'onClick={e=> setTomato(e.target.value)}/>
             </div>
             <div className='flex space-x-2'>
-            <label className='test-lg font-mulish' onClick={e=> setOnion(e.target.value)}>Onion</label>
-            <input type='checkbox' className='w-6'/>
+            <label className='test-lg font-mulish'>Onion</label>
+            <input type='checkbox' className='w-6'  onClick={e=> setOnion(e.target.value)}/>
             </div>
         </div>
     </form>
-    <div className='w-full my-4 flex items-end justify-end'>
+    <div className='w-full my-4 flex items-end justify-center lg:justify-end'>
     <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300 uppercase font-poppins'
             onClick={handleNext} 
             >Continue</button>
