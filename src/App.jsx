@@ -7,12 +7,12 @@ function App() {
 
   return (
     <main className='relative'>
-      <HiddenNavbar />
+      <HiddenNavbar />  
       <Nav />
       <section>
         <Hero />
       </section>
-      <section className='py-24'>
+      <section className='w-full h-screen'>
         <Create />
       </section>
       <section className='py-24'>
