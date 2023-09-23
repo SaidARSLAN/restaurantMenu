@@ -1,11 +1,13 @@
 import './App.css'
 import {Hero,Create,Menu,Comments,ChooseUs} from './sections'
 import Nav from './components/Nav'
+import HiddenNavbar from './components/HiddenNavbar'
 function App() {
 
 
   return (
     <main className='relative'>
+      <HiddenNavbar />
       <Nav />
       <section>
         <Hero />

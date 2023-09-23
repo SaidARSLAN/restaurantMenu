@@ -5,6 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
+
+
+  const openHamburgerSection = () => {
+    const hiddenNavbar = document.querySelector("#hiddenNavbar");
+    hiddenNavbar.classList.remove("w-0");
+    hiddenNavbar.classList.add("w-full");
+  }
+
   return (
     <header className='flex w-full justify-between lg:px-16 px-8  bg-yellow-400 h-[120px] items-center'>
         <h3 className='text-3xl font-poppins tracking-wider cursor-pointer w-1/3'>
@@ -15,7 +23,7 @@ const Nav = () => {
                     return <Link link={link}/>
             })}
         </nav>
-        <div className='grid grid-cols-1 gap-1 cursor-pointer lg:hidden'>
+        <div className='grid grid-cols-1 gap-1 cursor-pointer lg:hidden' onClick={openHamburgerSection}>
             <div className='w-[25px] h-[3px] bg-black'></div>
             <div className='w-[25px] h-[3px] bg-black'></div>
             <div className='w-[25px] h-[3px] bg-black'></div>
