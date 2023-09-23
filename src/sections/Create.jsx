@@ -24,7 +24,9 @@ const Create = () => {
         <img src={HamburgerNext} className='lg:w-[1440px]'/>
       </div>
       <div className='flex lg:items-start flex-col w-full lg:justify-center justify-center items-center  lg:px-24 lg:py-12'>
-      <h1 className='font-poppins text-xl lg:text-3xl   text-center lg:text-left'>Choose your ingredients and send us</h1>
+      <h1 className='font-poppins text-xl lg:text-3xl   text-center lg:text-left'>
+        {step === 0 ? "Choose name and continue" : step === 1 ? "Choose your ingredients" : step === 2 ? "Confirm Everything" : step === 3 ? "Added to box": <></>}
+      </h1>
         {step === 0 ? <HamburgeName /> : step === 1 ? <HamburgerInfo /> : step === 2 ? <HamburgerConfirm />: step === 3 ? <SendHamburger />:<></>}
         <div className= {step === 3 ? 'hidden' : 'mt-2 w-2/3 flex justify-end'}>
             <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300 uppercase font-poppins'
