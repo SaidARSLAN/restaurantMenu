@@ -3,12 +3,13 @@ import { HamburgerNext } from '../contains'
 import HamburgeName from '../components/HamburgeName';
 import HamburgerInfo from '../components/HamburgerInfo';
 import HamburgerConfirm from '../components/HamburgerConfirm';
+import SendHamburger from '../components/SendHamburger';
 
 const Create = () => {
   const [step, setStep] = useState(0);
 
   const handleNext = () => {
-    if (step < 2) {
+    if (step < 3) {
       setStep(step + 1);
     }
   }
@@ -24,11 +25,11 @@ const Create = () => {
       </div>
       <div className='flex lg:items-start flex-col w-full lg:justify-center justify-center items-center  lg:px-24 lg:py-12'>
       <h1 className='font-poppins text-xl lg:text-3xl   text-center lg:text-left'>Choose your ingredients and send us</h1>
-        {step === 0 ? <HamburgeName /> : step === 1 ? <HamburgerInfo /> : step === 2 ? <HamburgerConfirm /> : <div></div>}
-        <div className='mt-2 w-2/3 flex justify-end'>
-            <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300'
-            onClick={handleNext}
-            >Continue</button>
+        {step === 0 ? <HamburgeName /> : step === 1 ? <HamburgerInfo /> : step === 2 ? <HamburgerConfirm />: step === 3 ? <SendHamburger />:<></>}
+        <div className= {step === 3 ? 'hidden' : 'mt-2 w-2/3 flex justify-end'}>
+            <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300 uppercase font-poppins'
+            onClick={handleNext} 
+            >{step === 2 ? "Send" : "Continue"}</button>
           </div>
       </div>
       </div>
