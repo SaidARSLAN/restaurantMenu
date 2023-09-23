@@ -16,7 +16,7 @@ const HiddenNavbar = () => {
         <div className='w-full flex items-center justify-end p-12'>
             <h1 className='font-extrabold text-2xl cursor-pointer' onClick={closeHiddenBar}>X</h1>
         </div>
-        <div className='flex flex-col space-y-12 items-center justify-center py-9'>
+        <div className='flex flex-col space-y-12 items-center justify-center py-2'>
             <a href="/" className='text-2xl font-poppins text-black'>Home</a>
             <a href="" className='text-2xl font-poppins text-black'>Create</a>
             <a href="" className='text-2xl font-poppins text-black'>Menu</a>

@@ -3,8 +3,9 @@ import { Hamburger,Soup,Meat } from '../contains'
 
 const Hero = () => {
 
-    const [image, setImage] = useState(Hamburger);
     const [number,setNumber] = useState(0);
+
+    const [image, setImage] = useState(Hamburger);
     const foodImageLists = [Hamburger,Soup,Meat]
     const foodNameLists = ["Hamburger","Soup","Meat"]
     const foodExplainLists = [
@@ -16,12 +17,15 @@ const Hero = () => {
 const [name,setName] = useState(foodNameLists[0]);
 const [explain,setExplain] = useState(foodExplainLists[0]);
 
-    const createRandomNumber = () => {
-        return Math.floor(Math.random() * 3);
-    }
+    
     setTimeout(() => {
-            setNumber(createRandomNumber());
-    },2000);
+        if(number > 1) {
+            setNumber(0);
+        }
+        else {
+            setNumber(number + 1);
+        }
+    },3000);
 
     useEffect(() => {
         setImage(foodImageLists[number]);
@@ -32,7 +36,7 @@ const [explain,setExplain] = useState(foodExplainLists[0]);
 
   return (
     <div className='relative'>
-        <img src={image} className='text-xl object-cover w-[1920px] h-[595px] brightness-25'/>
+        <img src={image} className='text-xl object-cover w-[1920px] h-[620px] brightness-25'/>
         <div className='absolute bottom-24 left-[3%] lg:left-[3%] text-white flex flex-col space-y-4 px-4'>
             <h1 className='font-poppins text-4xl text-white lg:text-6xl'>{name}</h1>
             <p className='text-sm font-mulish text-white lg:text-xl lg:w-2/3'>{explain}</p>

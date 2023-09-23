@@ -6,11 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        dark : "#618264",
-        gray: "#79AC78",
-        lemon : "#B0D9B1",
-        white : "#D0E7D2" 
+      keyframes : {
+        fadeEffect : {
+          '0%' : {opacity : '0.1'},
+          '100%' : {opacity : '1'}
+        }
+      },
+      animation : {
+        'fadeEffect' : 'fadeEffect 1s ease'
       },
       brightness : {
         25 : '.25' 
