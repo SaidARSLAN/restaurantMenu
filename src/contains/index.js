@@ -11,7 +11,8 @@ import lunchBox from '../assets/lunchBox.png';
 import sending from '../assets/sending.gif';
 import cooking from '../assets/cooking.gif';
 
-export const navLinks = ["Home","Create","Menu","About","Comments"];
+export const navLinks = [{"name":"Home","url":"/"},{"name":"Create","url":"#create"},{"name":"Menu","url":"#menu"}
+,{"name":"About","url":"#about"},{"name":"Testimontials","url":"#testimontials"}];
 
 
 export {Hamburger,Soup,Meat,HamburgerNext,lunchBox,sending,cooking};

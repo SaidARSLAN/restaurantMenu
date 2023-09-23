@@ -19,7 +19,7 @@ const HiddenNavbar = () => {
         </div>
         <div className='flex flex-col space-y-12 items-center justify-center py-2'>
             <a href="/" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>Home</a>
-            <a href="" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>Create</a>
+            <a href="#create" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>Create</a>
             <a href="" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>Menu</a>
             <a href="" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>About</a>
             <a href="" className='text-2xl font-poppins text-black hover:bg-black hover:text-white duration-300 px-4 py-2'>Comments</a>

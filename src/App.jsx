@@ -14,7 +14,7 @@ function App() {
       <section>
         <Hero />
       </section>
-      <section className='w-full h-screen'>
+      <section className='w-full h-screen' id='create'>
         <Create />
       </section>
       <section className='py-96'>
