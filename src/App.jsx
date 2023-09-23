@@ -2,10 +2,12 @@ import './App.css'
 import {Hero,Create,Menu,Comments,ChooseUs} from './sections'
 import Nav from './components/Nav'
 import HiddenNavbar from './components/HiddenNavbar'
+import { Provider } from './context/MainContext'
 function App() {
 
 
   return (
+    <Provider>
     <main className='relative'>
       <HiddenNavbar />  
       <Nav />
@@ -25,6 +27,7 @@ function App() {
         <Comments />
       </section>
     </main>
+    </Provider>
   )
 }
 

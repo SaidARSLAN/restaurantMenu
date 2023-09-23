@@ -1,18 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { HamburgerNext } from '../contains'
 import HamburgeName from '../components/HamburgeName';
 import HamburgerInfo from '../components/HamburgerInfo';
 import HamburgerConfirm from '../components/HamburgerConfirm';
 import SendHamburger from '../components/SendHamburger';
+import GlobalContext from '../context/MainContext';
 
 const Create = () => {
-  const [step, setStep] = useState(0);
 
-  const handleNext = () => {
-    if (step < 3) {
-      setStep(step + 1);
-    }
-  }
+  const {data} = useContext(GlobalContext)
+  
 
   return (
     <div className='flex h-[900px] flex-col w-full bg-yellow-400 lg:h-[1200px]'>
@@ -25,14 +22,10 @@ const Create = () => {
       </div>
       <div className='flex lg:items-start flex-col w-full lg:justify-center justify-center items-center  lg:px-24 lg:py-12'>
       <h1 className='font-poppins text-xl lg:text-5xl   text-center lg:text-left'>
-        {step === 0 ? "Choose Name" : step === 1 ? "Choose your ingredients" : step === 2 ? "Confirm Everything" : step === 3 ? "Added Box": <></>}
+        {data.step === 0 ? "Choose Name" : data.step === 1 ? "Choose your ingredients" : data.step === 2 ? "Confirm Everything" : data.step === 3 ? "Added Box": <></>}
       </h1>
-        {step === 0 ? <HamburgeName /> : step === 1 ? <HamburgerInfo /> : step === 2 ? <HamburgerConfirm />: step === 3 ? <SendHamburger />:<></>}
-        <div className= {step === 3 ? 'hidden' : 'mt-2 w-2/3 flex justify-end'}>
-            <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300 uppercase font-poppins'
-            onClick={handleNext} 
-            >{step === 2 ? "Send" : "Continue"}</button>
-          </div>
+        {data.step === 0 ? <HamburgeName /> : data.step === 1 ? <HamburgerInfo /> : data.step === 2 ? <HamburgerConfirm />: data.step === 3 ? <SendHamburger />:<></>}
+    
       </div>
       </div>
     </div>
