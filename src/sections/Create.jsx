@@ -1,55 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { HamburgerNext } from '../contains'
+import HamburgeName from '../components/HamburgeName';
+import HamburgerInfo from '../components/HamburgerInfo';
+import HamburgerConfirm from '../components/HamburgerConfirm';
 
 const Create = () => {
+  const [step, setStep] = useState(0);
+
+  const handleNext = () => {
+    if (step < 2) {
+      setStep(step + 1);
+    }
+  }
+
   return (
-    <div className='flex h-[900px] flex-col w-full bg-yellow-400'>
-      <div className='w-full flex items-center justify-center mt-12'>
-        <h1 className='text-5xl text-center font-poppins leading-20'>Create Your Own Hamburger From Zero</h1>
+    <div className='flex h-[900px] flex-col w-full bg-yellow-400 lg:h-[1200px]'>
+      <div className='w-full flex items-center justify-center mt-28 lg:mt-52 bg-black py-8 lg:py-12'>
+        <h1 className='text-5xl text-center font-poppins leading-20 text-white lg:text-9xl'>Create Your Own Hamburger From Zero</h1>
       </div>
-      <div className='w-full my-9 flex items-center justify-center'>
-        <img src={HamburgerNext} />
+      <div className='flex flex-col lg:flex-row-reverse'>
+      <div className='w-full my-9 flex items-center justify-center lg:mt-24'>
+        <img src={HamburgerNext} className='lg:w-[1440px]'/>
       </div>
-      <div className='w-full flex items-center justify-center'>
-        <form className='flex flex-col w-full items-center'>
-          <input className='border-2 border-black w-2/3 px-4 py-2 font-mulish text-lg' placeholder='Name and Surname'></input>
-          <label>Which meat do you prefer?</label>
-          <select>
-            <option>Meat</option>
-            <option>Chicken</option>
-            <option>Vegan</option>
-          </select>
-          <div className='flex space-x-4'>
-          <div className='flex space-x-2'>
-          <input type='checkbox'></input>
-          <label>Lettuce</label>
+      <div className='flex lg:items-start flex-col w-full lg:justify-center justify-center items-center  lg:px-24 lg:py-12'>
+      <h1 className='font-poppins text-xl lg:text-3xl   text-center lg:text-left'>Choose your ingredients and send us</h1>
+        {step === 0 ? <HamburgeName /> : step === 1 ? <HamburgerInfo /> : step === 2 ? <HamburgerConfirm /> : <div></div>}
+        <div className='mt-2 w-2/3 flex justify-end'>
+            <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300'
+            onClick={handleNext}
+            >Continue</button>
           </div>
-          <div className='flex space-x-2'>
-          <input type='checkbox'></input>
-          <label>Salad</label>
-          </div>
-          <div className='flex space-x-2'>
-          <input type='checkbox'></input>
-          <label>Tomato</label>
-          </div>
-          </div>
-          <label>Which cheese do you prefer?</label>
-          <select>
-            <option>Cheedar</option>
-            <option>Mozerella</option>
-            <option>None</option>
-          </select>
-          <div className='flex space-x-2'>
-          <input type='checkbox'></input>
-          <label>You want to onion?</label>
-          </div>
-          <label>Which bread do you prefer?</label>
-          <select>
-            <option>Normal</option>
-            <option>Big</option>
-            <option>Small</option>
-          </select>
-        </form>
+      </div>
       </div>
     </div>
   )
