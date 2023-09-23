@@ -12,6 +12,9 @@ export default {
         lemon : "#B0D9B1",
         white : "#D0E7D2" 
       },
+      brightness : {
+        25 : '.25' 
+      },
       fontFamily : {
         mulish : ['Mulish', 'sans-serif'],
         poppins : ['Poppins', 'sans-serif']
