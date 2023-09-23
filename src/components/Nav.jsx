@@ -2,7 +2,7 @@ import React from 'react'
 import { navLinks } from '../contains'
 import Link from './Link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+import { faHamburger, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import OpenShopBox from './OpenShopBox'
 
 const Nav = () => {
@@ -28,10 +28,10 @@ const Nav = () => {
 
   return (
     <header className='flex w-full justify-between lg:px-16 px-8  bg-yellow-400 h-[100px] items-center'>
-        <h3 className='text-3xl font-poppins tracking-wider cursor-pointer w-1/3'>
-            CocaFood
+        <h3 className='text-3xl font-poppins tracking-wider cursor-pointer w-1/3 flex space-x-4 items-center'>
+            <FontAwesomeIcon icon={faHamburger}></FontAwesomeIcon><div className='flex'><span>Coca</span><span>Food</span></div>
         </h3>
-        <nav className='hidden lg:flex lg:w-1/3 w-full justify-evenly'>
+        <nav className='hidden lg:flex lg:w-1/3 w-full justify-evenly items-center'>
             {navLinks.map((link) => {
                     return <Link link={link}/>
             })}
