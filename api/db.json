@@ -51,7 +51,7 @@
     {
       "id": 7,
       "name": "Chicken Alfredo",
-      "img": "",
+      "img": "https://c4.wallpaperflare.com/wallpaper/358/377/179/meat-food-steak-wood-wallpaper-preview.jpg",
       "ingredients": ["chicken breast", "fettuccine pasta", "heavy cream", "Parmesan cheese", "butter", "garlic"],
       "type": "Meal",
       "price": 12.99
@@ -59,7 +59,7 @@
     {
       "id": 8,
       "name": "Vegetable Stir-Fry",
-      "img": "",
+      "img": "https://c4.wallpaperflare.com/wallpaper/997/408/959/tomato-leaves-vegetables-meat-beef-wallpaper-preview.jpg",
       "ingredients": ["mixed vegetables", "tofu", "soy sauce", "sesame oil", "ginger", "rice"],
       "type": "Meal",
       "price": 11.49
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "name": "Beef Tacos",
-      "img": "",
+      "img": "https://c0.wallpaperflare.com/preview/797/1015/608/burrito-chicken-close-up-delicious.jpg",
       "ingredients": ["ground beef", "taco shells", "lettuce", "tomato", "cheddar cheese", "sour cream"],
       "type": "Meal",
       "price": 10.99
@@ -75,7 +75,7 @@
     {
       "id": 10,
       "name": "Spaghetti Bolognese",
-      "img": "",
+      "img": "https://c0.wallpaperflare.com/preview/527/381/127/cooked-meat-on-plate.jpg",
       "ingredients": ["ground beef", "spaghetti pasta", "tomato sauce", "onions", "garlic", "Italian seasoning"],
       "type": "Meal",
       "price": 9.99
@@ -83,7 +83,7 @@
     {
       "id": 11,
       "name": "Salmon with Lemon-Dill Sauce",
-      "img": "",
+      "img": "https://c4.wallpaperflare.com/wallpaper/371/932/27/hamburgers-fast-food-tomatoes-wallpaper-preview.jpg",
       "ingredients": ["salmon fillet", "lemon juice", "dill", "olive oil", "salt", "pepper"],
       "type": "Meal",
       "price": 14.99
@@ -91,7 +91,7 @@
     {
       "id": 12,
       "name": "Vegetable Curry",
-      "img": "",
+      "img": "https://c1.wallpaperflare.com/preview/973/361/77/barbecue-meat-grill-grilled-meats.jpg",
       "ingredients": ["mixed vegetables", "coconut milk", "curry paste", "rice", "cilantro"],
       "type": "Meal",
       "price": 11.99
@@ -99,7 +99,7 @@
     {
       "id": 13,
       "name": "Margherita Pizza",
-      "img": "",
+      "img": "https://c4.wallpaperflare.com/wallpaper/234/543/684/food-pizza-wallpaper-preview.jpg",
       "ingredients": ["pizza dough", "tomato sauce", "mozzarella cheese", "fresh basil leaves", "olive oil", "salt", "black pepper"],
       "type": "Pizza",
       "price": 13.49
@@ -107,7 +107,7 @@
     {
       "id": 14,
       "name": "Pepperoni Pizza",
-      "img": "",
+      "img": "https://c4.wallpaperflare.com/wallpaper/165/200/910/food-pizza-cheese-wallpaper-preview.jpg",
       "ingredients": ["pizza dough", "tomato sauce", "pepperoni slices", "mozzarella cheese", "oregano", "olive oil"],
       "type": "Pizza",
        "price" : 24.99
@@ -115,7 +115,7 @@
     {
         "id": 15,
         "name": "Hawaiian Pizza",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/89/312/884/pizza-tomatoes-olives-mushrooms-wallpaper-preview.jpg",
         "ingredients": ["pizza dough", "tomato sauce", "ham slices", "pineapple chunks", "mozzarella cheese"],
         "type": "Pizza",
         "price": 13.99
@@ -123,7 +123,7 @@
       {
         "id": 16,
         "name": "Vegetarian Pizza",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/1017/647/742/food-pizza-cheese-tomatoes-olives-hd-wallpaper-preview.jpg",
         "ingredients": ["pizza dough", "tomato sauce", "bell peppers", "onions", "black olives", "mozzarella cheese"],
         "type": "Pizza",
         "price": 12.49
@@ -131,7 +131,7 @@
       {
         "id": 17,
         "name": "Supreme Pizza",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/1015/796/913/food-dish-dinner-meal-wallpaper-preview.jpg",
         "ingredients": ["pizza dough", "tomato sauce", "pepperoni slices", "bell peppers", "onions", "black olives", "mozzarella cheese", "mushrooms"],
         "type": "Pizza",
         "price": 14.99
@@ -139,7 +139,7 @@
       {
         "id": 18,
         "name": "BBQ Chicken Pizza",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/1017/931/803/cheese-dish-food-garlic-wallpaper-preview.jpg",
         "ingredients": ["pizza dough", "BBQ sauce", "chicken breast strips", "red onion", "mozzarella cheese", "cilantro"],
         "type": "Pizza",
         "price": 13.99
@@ -147,7 +147,7 @@
       {
         "id": 19,
         "name": "Mushroom and Truffle Oil Pizza",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/826/968/997/food-pizza-tomatoes-red-onion-wallpaper-preview.jpg",
         "ingredients": ["pizza dough", "truffle oil", "mushrooms", "mozzarella cheese", "Parmesan cheese", "fresh thyme leaves"],
         "type": "Pizza",
         "price": 15.49
@@ -155,7 +155,7 @@
       {
         "id": 20,
         "name": "Caesar Salad",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/161/104/1014/salad-greek-vegetables-cucumbers-peppers-tomatoes-leaves-olives-cheese-food-plate-bread-loaf-butter-salad-vegetable-wallpaper-preview.jpg",
         "ingredients": ["romaine lettuce", "Caesar dressing", "croutons", "Parmesan cheese", "lemon juice", "black pepper"],
         "type": "Salad",
         "price": 9.99
@@ -163,7 +163,7 @@
       {
         "id": 21,
         "name": "Greek Salad",
-        "img": "",
+        "img": "https://c1.wallpaperflare.com/preview/974/102/508/food-drink-dinner-food-overhead.jpg",
         "ingredients": ["cucumbers", "tomatoes", "red onion", "feta cheese", "kalamata olives", "Greek dressing"],
         "type": "Salad",
         "price": 8.99
@@ -171,7 +171,7 @@
       {
         "id": 22,
         "name": "Caprese Salad",
-        "img": "",
+        "img": "https://c1.wallpaperflare.com/preview/935/988/7/vegetables-eating-lunch-meal.jpg",
         "ingredients": ["tomatoes", "fresh mozzarella", "fresh basil leaves", "balsamic glaze", "olive oil", "salt", "black pepper"],
         "type": "Salad",
         "price": 7.99
@@ -179,7 +179,7 @@
       {
         "id": 23,
         "name": "Cobb Salad",
-        "img": "",
+        "img": "https://c1.wallpaperflare.com/preview/710/100/959/salad-green-healthy-food.jpg",
         "ingredients": ["lettuce", "chicken breast", "bacon", "hard-boiled eggs", "avocado", "blue cheese", "ranch dressing"],
         "type": "Salad",
         "price": 10.99
@@ -187,7 +187,7 @@
       {
         "id": 24,
         "name": "Spinach and Strawberry Salad",
-        "img": "",
+        "img": "https://c1.wallpaperflare.com/preview/675/947/624/food-drink-bread-breakfast-food.jpg",
         "ingredients": ["baby spinach", "strawberries", "walnuts", "feta cheese", "balsamic vinaigrette"],
         "type": "Salad",
         "price": 9.49
@@ -195,7 +195,7 @@
       {
         "id": 25,
         "name": "Chocolate Cake",
-        "img": "",
+        "img": "https://c0.wallpaperflare.com/preview/361/993/86/cake-with-strawberry.jpg",
         "ingredients": ["all-purpose flour", "cocoa powder", "sugar", "butter", "eggs", "vanilla extract", "baking powder"],
         "type": "Sweet",
         "price": 7.99
@@ -203,7 +203,7 @@
       {
         "id": 26,
         "name": "Apple Pie",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/511/96/904/lemon-food-pie-cake-wallpaper-preview.jpg",
         "ingredients": ["pie crust", "apples", "sugar", "cinnamon", "nutmeg", "butter"],
         "type": "Sweet",
         "price": 6.99
@@ -211,7 +211,7 @@
       {
         "id": 27,
         "name": "Strawberry Shortcake",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/246/206/360/cream-cake-cake-cherry-wallpaper-preview.jpg",
         "ingredients": ["strawberries", "shortcake biscuits", "whipped cream"],
         "type": "Sweet",
         "price": 5.49
@@ -219,7 +219,7 @@
       {
         "id": 28,
         "name": "Tiramisu",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/768/768/930/cheesecake-cake-slice-sweet-wallpaper-preview.jpg",
         "ingredients": ["ladyfingers", "espresso", "mascarpone cheese", "cocoa powder", "whipped cream"],
         "type": "Sweet",
         "price": 7.99
@@ -227,7 +227,7 @@
       {
         "id": 29,
         "name": "Chocolate Chip Cookies",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/814/336/10/sweet-food-chocolate-cake-dessert-cherry-brownies-with-ice-cream-and-cherry-wallpaper-preview.jpg",
         "ingredients": ["butter", "sugar", "brown sugar", "eggs", "vanilla extract", "chocolate chips", "flour"],
         "type": "Sweet",
         "price": 5.99
@@ -235,7 +235,7 @@
       {
         "id": 30,
         "name": "Banana Split",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/396/654/360/food-chocolate-dessert-cake-wallpaper-preview.jpg",
         "ingredients": ["bananas", "vanilla ice cream", "chocolate syrup", "strawberries", "whipped cream", "chopped nuts", "cherries"],
         "type": "Sweet",
         "price": 6.99
@@ -243,7 +243,7 @@
       {
         "id": 31,
         "name": "Mango Smoothie",
-        "img": "",
+        "img": "https://c0.wallpaperflare.com/preview/797/39/616/beverage-citrus-close-up-cocktail.jpg",
         "ingredients": ["mango", "yogurt", "milk", "honey", "ice"],
         "type": "Drink",
         "price": 4.99
@@ -251,7 +251,7 @@
       {
         "id": 32,
         "name": "Iced Coffee",
-        "img": "",
+        "img": "https://c0.wallpaperflare.com/preview/60/629/230/ukraine-kiev-latte-iced-coffee.jpg",
         "ingredients": ["coffee", "milk", "sugar", "ice"],
         "type": "Drink",
         "price": 3.99
@@ -259,7 +259,7 @@
       {
         "id": 33,
         "name": "Green Tea",
-        "img": "",
+        "img": "https://c1.wallpaperflare.com/preview/507/732/880/green-tea-hot-healthy-herbal.jpg",
         "ingredients": ["green tea leaves", "hot water", "honey", "lemon"],
         "type": "Drink",
         "price": 2.99
@@ -267,7 +267,7 @@
       {
         "id": 34,
         "name": "Lemonade",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/380/59/702/beach-summer-tropics-cocktail-wallpaper-preview.jpg",
         "ingredients": ["lemons", "sugar", "water", "ice"],
         "type": "Drink",
         "price": 3.49
@@ -275,7 +275,7 @@
       {
         "id": 35,
         "name": "Mojito",
-        "img": "",
+        "img": "https://c4.wallpaperflare.com/wallpaper/256/692/28/summer-drinks-mojito-green-lemon-ice-cup-water-splash-wallpaper-preview.jpg",
         "ingredients": ["white rum", "lime juice", "mint leaves", "sugar", "club soda", "ice"],
         "type": "Drink",
         "price": 5.99
