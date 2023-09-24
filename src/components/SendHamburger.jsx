@@ -26,7 +26,7 @@ const SendHamburger = () => {
             ) : (
                 <div className='flex w-full items-center flex-col justify-center'>
                 <h1 className='font-poppins text-4xl lg:text-5xl   text-center lg:text-left'>Added Box</h1>
-                <img src={cooking} className='w-1/3 lg:w-2/3 my-4 h-[400px]' alt='Cooking' />
+                <img src={cooking} className='w-1/3 lg:w-2/3 my-4 lg:h-[400px]' alt='Cooking' />
                 </div>
             )}
         </div>

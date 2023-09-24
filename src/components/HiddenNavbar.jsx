@@ -1,10 +1,11 @@
-import { faShoppingBag,faHamburger } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 
+
 const HiddenNavbar = () => {
 
-
+  
     const closeHiddenBar = () => {
         const hiddenNavbar = document.querySelector("#hiddenNavbar");
         hiddenNavbar.classList.remove("w-full");
@@ -13,7 +14,6 @@ const HiddenNavbar = () => {
 
   return (
     <div className='w-0 h-screen lg:hidden fixed overflow-hidden bg-yellow-400 z-50 flex flex-col justify-start items-center duration-300' id='hiddenNavbar'>
-        
         <div className='w-full flex items-center justify-end p-8'>
             <h1 className='font-extrabold text-2xl cursor-pointer hover:bg-black hover:text-white px-4 py-1 duration-300' onClick={closeHiddenBar}>X</h1>
         </div>

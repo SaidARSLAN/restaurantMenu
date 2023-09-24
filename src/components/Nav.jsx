@@ -18,16 +18,16 @@ const Nav = () => {
     const shopbox = document.querySelector("#shopbox");
     if (shopbox.classList.contains("h-0")) {
     shopbox.classList.remove("h-0");
-    shopbox.classList.add("h-[15%]");
+    shopbox.classList.add("h-[250px]");
     }
     else {
       shopbox.classList.add("h-0");
-    shopbox.classList.remove("h-[15%]");
+    shopbox.classList.remove("h-[250px]");
     }
   }
 
   return (
-    <header className='flex w-full justify-between lg:px-16 px-8  bg-yellow-400 h-[100px] items-center'>
+    <header className='flex fixed lg:static z-10 lg:z-0 w-full shadow-xl justify-between lg:px-16 px-8  bg-yellow-400 h-[100px] items-center'>
         <h3 className='text-3xl font-poppins tracking-wider cursor-pointer w-1/3 flex space-x-4'>
             <FontAwesomeIcon icon={faHamburger}></FontAwesomeIcon><div className='flex'><span>Coca</span><span>Food</span></div>
         </h3>
@@ -36,10 +36,14 @@ const Nav = () => {
                     return <Link link={link} key={key}/>
             })}
         </nav>
+        <div className='flex space-x-8'>
+        <FontAwesomeIcon icon={faShoppingBag} className='text-2xl cursor-pointer hover:text-gray-600 duration-300 lg:hidden' onClick={openShopBox}></FontAwesomeIcon>
+        <OpenShopBox />
         <div className='grid grid-cols-1 gap-1 cursor-pointer lg:hidden' onClick={openHamburgerSection}>
             <div className='w-[25px] h-[3px] bg-black'></div>
             <div className='w-[25px] h-[3px] bg-black'></div>
             <div className='w-[25px] h-[3px] bg-black'></div>
+        </div>
         </div>
         <div className='hidden lg:flex justify-center w-1/3 space-x-6 items-center'>
           <div className='flex flex-col'>
