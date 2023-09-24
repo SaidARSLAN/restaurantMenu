@@ -36,7 +36,7 @@ const HamburgerInfo = () => {
             <option>None</option>
         </select>
         </div>
-        <div className='flex space-x-4 py-4'>
+        <div className='flex space-x-4 py-2'>
             <div className='flex space-x-2'>
             <label className='test-lg font-mulish'>Salad</label>
             <input type='checkbox' className='w-6' onClick={e=> setSalad(e.target.value)}/>
@@ -51,7 +51,7 @@ const HamburgerInfo = () => {
             </div>
         </div>
     </form>
-    <div className='w-full my-4 flex items-end justify-center lg:justify-end'>
+    <div className='w-full  flex items-end justify-center lg:justify-end'>
     <button className='px-6 py-2 bg-black text-white hover:bg-white hover:text-black duration-300 uppercase font-poppins'
             onClick={handleNext} 
             >Continue</button>

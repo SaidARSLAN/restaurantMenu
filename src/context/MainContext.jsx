@@ -17,17 +17,55 @@ export  function Provider ({children}) {
     const [menu,setMenu] = useState([]);
     const [loading,setLoading] = useState(false);
 
+    const [stepMenu, setStepMenu] = useState(0);
+    const titles = ["Breakfast","Meal","Pizza","Salad","Sweet","Drink"];
+    const [filterMenu, setFilterMenu] = useState([]);
     
+    const handlNext = () => {
+        if (stepMenu < titles.length - 1) {
+          setStepMenu(currStep => currStep + 1);
+        }
+      }
+      const handleBack = () => {
+        if (stepMenu > 0) {
+          setStepMenu(currStep => currStep - 1);
+        }
+      }
+
     const getMenuFromData = async () => {
         const request = await axios.get("http://localhost:3000/menu");
         setMenu(request.data);
     }
+    
+      const createFilterMenu = () => {
+        const afterFilteredList = menu.filter((item) => {
+            return item.type === titles[stepMenu];
+        })
+        setFilterMenu(afterFilteredList);
+      }
+
+      useEffect(() => {
+        const afterFilteredMenu = menu.filter((item) => {
+          return item.type === titles[stepMenu];
+        })
+        setFilterMenu(afterFilteredMenu);
+    },[stepMenu])
 
     useEffect(() => {
-        setLoading(true)
-        getMenuFromData();
-        setLoading(false);
+        try {
+            setLoading(true)
+            getMenuFromData();        
+            setLoading(false);
+
+        }
+        catch  {
+            console.log("err")
+        }
     },[])
+
+    useEffect(() => {
+        createFilterMenu();
+    },[menu]);
 
     const sendName = (name) => {
         setHamburgerName(name);
@@ -50,8 +88,11 @@ export  function Provider ({children}) {
         step,
         setStep
     };
+
+    console.log(filterMenu)
+
     return (
-        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading}}>
+        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading,handleBack,handlNext,stepMenu,filterMenu}}>
             {children}
         </GlobalContext.Provider>
     )

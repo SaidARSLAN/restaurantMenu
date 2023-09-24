@@ -3,7 +3,7 @@
     {
             "id": 1,
             "name": "Healthy Start",
-            "img": "",
+            "img": "https://c4.wallpaperflare.com/wallpaper/534/544/958/ham-breakfast-brunch-full-breakfast-wallpaper-preview.jpg",
             "ingredients": ["Greek yogurt", "berries", "honey", "granola", "orange juice"],
             "type": "Breakfast",
             "price": 6.49
@@ -11,7 +11,7 @@
     {
       "id": 2,
       "name": "Standard",
-      "img": "",
+      "img": "https://images.wallpaperscraft.com/image/single/breakfast_eggs_vegetables_106528_1920x1080.jpg",
       "ingredients": ["4 eggs", "olive", "cheese", "Turkish Meat", "Tea or Coffee", "Breakfast Salad", "Water"],
       "type": "Breakfast",
       "price": 7.99
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Classic Omelette",
-      "img": "",
+      "img": "https://c1.wallpaperflare.com/preview/750/554/495/english-breakfast-eating-bacon-cooking.jpg",
       "ingredients": ["3 eggs", "bell peppers", "onions", "mushrooms", "cheddar cheese", "salt", "pepper"],
       "type": "Breakfast",
       "price": 8.99
@@ -27,7 +27,7 @@
     {
       "id": 4,
       "name": "Pancake Delight",
-      "img": "",
+      "img": "https://c1.wallpaperflare.com/preview/946/663/644/all-day-yummy-english-breakfast.jpg",
       "ingredients": ["pancake mix", "maple syrup", "butter", "strawberries", "whipped cream"],
       "type": "Breakfast",
       "price": 5.99
@@ -35,7 +35,7 @@
     {
       "id": 5,
       "name": "Avocado Toast",
-      "img": "",
+      "img": "https://c0.wallpaperflare.com/preview/144/735/782/healthy-mushroom-toast-egg.jpg",
       "ingredients": ["avocado", "whole wheat bread", "tomato slices", "poached eggs", "salt", "pepper"],
       "type": "Breakfast",
       "price": 6.99
@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Protein-Packed Smoothie",
-      "img": "",
+      "img": "https://c1.wallpaperflare.com/preview/985/334/483/breakfast-food-egg-white.jpg",
       "ingredients": ["protein powder", "banana", "spinach", "almond milk", "peanut butter"],
       "type": "Breakfast",
       "price": 7.49

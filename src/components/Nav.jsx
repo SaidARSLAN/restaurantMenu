@@ -32,8 +32,8 @@ const Nav = () => {
             <FontAwesomeIcon icon={faHamburger}></FontAwesomeIcon><div className='flex'><span>Coca</span><span>Food</span></div>
         </h3>
         <nav className='hidden lg:flex lg:w-1/3 w-full justify-evenly'>
-            {navLinks.map((link) => {
-                    return <Link link={link}/>
+            {navLinks.map((link,key) => {
+                    return <Link link={link} key={key}/>
             })}
         </nav>
         <div className='grid grid-cols-1 gap-1 cursor-pointer lg:hidden' onClick={openHamburgerSection}>
