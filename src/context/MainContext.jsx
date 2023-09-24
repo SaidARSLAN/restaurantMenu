@@ -1,4 +1,5 @@
-import { createContext, useState } from "react";
+import axios from "axios";
+import { createContext, useEffect, useState } from "react";
 
 
 const GlobalContext = createContext();
@@ -13,6 +14,20 @@ export  function Provider ({children}) {
     const [tomato,setTomato] = useState("off");
     const [onion,setOnion] = useState("off");
     const [step,setStep] = useState(0);
+    const [menu,setMenu] = useState([]);
+    const [loading,setLoading] = useState(false);
+
+    
+    const getMenuFromData = async () => {
+        const request = await axios.get("http://localhost:3000/menu");
+        setMenu(request.data);
+    }
+
+    useEffect(() => {
+        setLoading(true)
+        getMenuFromData();
+        setLoading(false);
+    },[])
 
     const sendName = (name) => {
         setHamburgerName(name);
@@ -25,7 +40,6 @@ export  function Provider ({children}) {
         setTomato(tomato);
         setOnion(onion);
     }
-
     const data = {
         hamburgerName,
         meat,
@@ -37,7 +51,7 @@ export  function Provider ({children}) {
         setStep
     };
     return (
-        <GlobalContext.Provider value={{data,sendName,sendData}}>
+        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading}}>
             {children}
         </GlobalContext.Provider>
     )
