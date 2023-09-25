@@ -23,7 +23,7 @@ function App() {
       <section>
         <ChooseUs />
       </section>
-      <section className='py-24'>
+      <section>
         <Comments />
       </section>
     </main>
