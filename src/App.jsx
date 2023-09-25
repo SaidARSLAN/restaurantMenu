@@ -3,6 +3,7 @@ import {Hero,Create,Menu,Comments,ChooseUs} from './sections'
 import Nav from './components/Nav'
 import HiddenNavbar from './components/HiddenNavbar'
 import { Provider } from './context/MainContext'
+import Footer from './components/Footer'
 function App() {
 
 
@@ -23,9 +24,10 @@ function App() {
       <section>
         <ChooseUs />
       </section>
-      <section>
+      <section className='lg:py-24'>
         <Comments />
       </section>
+      <Footer />
     </main>
     </Provider>
   )
