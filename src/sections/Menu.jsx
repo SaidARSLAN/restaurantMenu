@@ -15,7 +15,7 @@ const Menu = () => {
   
 
   return (
-    <section className='flex flex-col  text-center pt-4 w-full items-center justify-center' id='menu'>
+    <section className='flex flex-col  text-center pt-4 w-full items-center justify-center bg-white' id='menu'>
       <div className='flex space-x-4 my-8 items-center'>
         <button className={stepMenu === 0 ? "text-2xl text-gray-400 cursor-default" : 'text-2xl  text-black hover:text-yellow-400 duration-200'} onClick={handleBack}><FontAwesomeIcon icon={faChevronLeft}></FontAwesomeIcon></button>
         <h1 className='w-[100px] mx-auto text-lg font-poppins'>{titles[stepMenu]}</h1>

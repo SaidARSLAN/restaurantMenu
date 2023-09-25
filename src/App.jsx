@@ -17,7 +17,7 @@ function App() {
       <section className='w-full h-screen' id='create'>
         <Create />
       </section>
-      <section className='pt-48 lg:py-[350px]  w-full'>
+      <section className='pt-48 pb-4 lg:pt-[350px] lg:pb-20  w-full'>
         <Menu />
       </section>
       <section>
