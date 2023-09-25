@@ -11,8 +11,11 @@ import lunchBox from '../assets/lunchBox.png';
 import sending from '../assets/sending.gif';
 import cooking from '../assets/cooking.gif';
 
+import wallpaper from '../assets/wallpaper.jpg';
+
+
 export const navLinks = [{"name":"Home","url":"/"},{"name":"Create","url":"#create"},{"name":"Menu","url":"#menu"}
 ,{"name":"About","url":"#about"},{"name":"Testimontials","url":"#testimontials"}];
 
 
-export {Hamburger,Soup,Meat,HamburgerNext,lunchBox,sending,cooking};
+export {Hamburger,Soup,Meat,HamburgerNext,lunchBox,sending,cooking,wallpaper};

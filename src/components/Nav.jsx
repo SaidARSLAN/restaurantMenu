@@ -18,11 +18,11 @@ const Nav = () => {
     const shopbox = document.querySelector("#shopbox");
     if (shopbox.classList.contains("h-0")) {
     shopbox.classList.remove("h-0");
-    shopbox.classList.add("h-[250px]");
+    shopbox.classList.add("h-[300px]");
     }
     else {
       shopbox.classList.add("h-0");
-    shopbox.classList.remove("h-[250px]");
+    shopbox.classList.remove("h-[300px]");
     }
   }
 

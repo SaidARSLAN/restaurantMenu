@@ -17,10 +17,10 @@ function App() {
       <section className='w-full h-screen' id='create'>
         <Create />
       </section>
-      <section className='py-48 lg:py-[350px]  w-full'>
+      <section className='pt-48 lg:py-[350px]  w-full'>
         <Menu />
       </section>
-      <section className='py-24'>
+      <section>
         <ChooseUs />
       </section>
       <section className='py-24'>

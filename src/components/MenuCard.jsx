@@ -14,7 +14,7 @@ const MenuCard = ({item}) => {
         <h1 className='font-mulish text-sm'>{item.ingredients.map((ing,idx) => {return <li key={idx}>{ing}</li>})}</h1>
         </div>
         <button className='bg-yellow-400 flex w-[100px] items-center justify-center my-2 space-x-2 py-4 px-2 hover:bg-black hover:text-yellow-400 duration-300'>
-            <span className='text-lg font-poppins'><FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon></span><span className='text-lg font-poppins'>{item.price} $</span>
+            <span className='text-sm font-poppins'><FontAwesomeIcon icon={faShoppingBag}></FontAwesomeIcon></span><span className='text-sm font-poppins'>{item.price} $</span>
         </button>
         </div>
         </div>
