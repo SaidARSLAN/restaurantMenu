@@ -13,6 +13,7 @@ const Footer = () => {
             <h3 className='text-sm font-poppins lg:text-xl'>Contact Informations</h3>
             <p className='text-sm font-mulish lg:text-lg'>123 Elm Street Maplewood, CA 98765</p>
             <p className='text-sm font-mulish lg:text-lg'>+905678912345</p>
+            <p className='text-sm font-mulish my-4 text-center lg:text-left'>Copyright © 2023. All rights are reserved</p>
         </div>
         </div>
         <div className='flex flex-col items-center'>
