@@ -103,7 +103,7 @@ export  function Provider ({children}) {
     },[boughtPrice])
 
     return (
-        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading,handleBack,handlNext,stepMenu,filterMenu,sendBuyItems,boughtName,boughtPrice,total,shoppedList}}>
+        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading,handleBack,handlNext,stepMenu,filterMenu,sendBuyItems,boughtName,boughtPrice,total,shoppedList,setShoppedList,setTotal}}>
             {children}
         </GlobalContext.Provider>
     )
