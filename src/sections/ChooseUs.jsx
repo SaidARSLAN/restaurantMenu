@@ -3,7 +3,7 @@ import React from 'react'
 const ChooseUs = () => {
   return (
     <section id="about" className='bg-yellow-400 w-full flex flex-col lg:flex-row'>
-      <div className='flex flex-col lg:w-[60%] lg:items-start bg-black lg:px-12 lg:py-4'>
+      <div className='flex flex-col lg:w-[60%] lg:items-start bg-black lg:px-24 lg:py-4'>
         <h1 className='text-sm lg:text-xl font-poppins flex items-center  justify-center pt-12 pb-4 text-yellow-400'>Why Choose Us ?</h1>
         <h1 className=' text-white text-4xl font-poppins lg:text-8xl lg:text-left text-center pt-2'>Serving <span className='text-yellow-400'>smiles</span>, one plate at a time</h1>
         <p className=' text-white text-sm lg:text-xl tracking-wider px-4 lg:text-left font-mulish text-center py-4'>Our food is a flavor explosion! From scrumptious tacos to creamy pasta, we've got your cravings covered.<span className='text-yellow-400 block font-poppins'> Our service?</span> It's like dining with friends – warm, welcoming, and unforgettable!</p>

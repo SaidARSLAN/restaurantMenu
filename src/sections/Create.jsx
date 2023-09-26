@@ -12,11 +12,11 @@ const Create = () => {
   
 
   return (
-    <section id="create" className='flex h-[900px] flex-col w-full bg-yellow-400 lg:h-[1050px]'>
+    <section id="create" className='flex h-[900px] flex-col w-full bg-yellow-400 lg:h-[1050px] '>
       <div className='w-full flex items-center justify-center mt-28 lg:mt-52 bg-black py-8 lg:py-12'>
         <h1 className='text-5xl text-center font-poppins leading-20 text-white lg:text-9xl'>Create Your Own Hamburger From Zero</h1>
       </div>
-      <div className='flex flex-col lg:flex-row-reverse'>
+      <div className='flex flex-col lg:flex-row-reverse lg:px-2'>
       <div className='w-full my-9 flex items-center justify-center lg:mt-24'>
         <img src={HamburgerNext} className='lg:w-[1440px]'/>
       </div>

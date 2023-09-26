@@ -16,6 +16,10 @@ export  function Provider ({children}) {
     const [step,setStep] = useState(0);
     const [menu,setMenu] = useState([]);
     const [loading,setLoading] = useState(false);
+    const [total,setTotal] = useState(0);
+    const [shoppedList,setShoppedList] = useState([]);
+    const [boughtName,setBoughtName] = useState("");
+    const [boughtPrice,setBoughtPrice] = useState(0);
 
     const [stepMenu, setStepMenu] = useState(0);
     const titles = ["Breakfast","Meal","Pizza","Salad","Sweet","Drink"];
@@ -89,10 +93,17 @@ export  function Provider ({children}) {
         setStep
     };
 
-    console.log(filterMenu)
+    const sendBuyItems = (name,price) => {
+          setShoppedList([...shoppedList,{"name":name,"price":price}])
+          setBoughtName(name),
+          setBoughtPrice(price);
+    }
+    useEffect(() => {
+      setTotal(total + boughtPrice);
+    },[boughtPrice])
 
     return (
-        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading,handleBack,handlNext,stepMenu,filterMenu}}>
+        <GlobalContext.Provider value={{data,sendName,sendData,menu,loading,handleBack,handlNext,stepMenu,filterMenu,sendBuyItems,boughtName,boughtPrice,total,shoppedList}}>
             {children}
         </GlobalContext.Provider>
     )

@@ -5,7 +5,7 @@ const Comments = () => {
   return (
     <section id='testimontials'>
       <h1 className='text-center text-2xl font-poppins py-4'>Customer's Reviews</h1>
-      <div className='grid grid-cols-1 px-4 py-4 space-y-4 lg:grid-cols-4'>
+      <div className='grid grid-cols-1 px-4 py-4 space-y-4 lg:grid-cols-4 lg:px-28 lg:space-x-4'>
         <div className='flex border-[1px]  lg:flex-col-reverse lg:items-center lg:justify-start py-2 px-8   shadow-xl shadow-slate-700'>
           <div className='text-left flex flex-col justify-center'>
             <h3 className='font-poppins text-base text-yellow-600 lg:text-xl lg:text-center'>Emma Hayes</h3>

@@ -4,7 +4,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='text-white  bg-black lg:h-96 h-60 flex py-12 lg:items-center lg:justify-around lg:px-12 justify-evenly'>
+    <div className='text-white  bg-black lg:h-96 h-60 flex py-12 lg:items-center lg:justify-betnween lg:px-28   justify-between px-8'>
         <div>
         <h3 className='text-3xl lg:text-5xl font-poppins tracking-wider cursor-pointer w-1/3 flex space-x-4'>
             <FontAwesomeIcon icon={faHamburger} className='text-yellow-400'></FontAwesomeIcon><div className='flex'><span>Coca</span><span className='text-yellow-400'>Food</span></div>
