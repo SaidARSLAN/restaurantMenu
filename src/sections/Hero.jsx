@@ -7,7 +7,7 @@ const Hero = () => {
 
     const [image, setImage] = useState(Hamburger);
     const foodImageLists = [Hamburger,Soup,Meat]
-    const foodNameLists = ["Hamburger","Soup","Meat"]
+    const foodNameLists = ["Savory Hamburgers","Homemade Soups","Exquisite Meat Dishes"]
     const foodExplainLists = [
         "Sink your teeth into our mouthwatering hamburgers! Our sizzling beef patties, fresh toppings, and soft buns create burger perfection.",
         "Savor the warmth and flavor of our exquisite soups, crafted with care and a dash of culinary magic. Soup that nourishes the soul!",
