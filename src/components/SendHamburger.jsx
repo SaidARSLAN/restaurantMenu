@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { cooking } from '../contains';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faRing, faSpinner, faTruckLoading } from '@fortawesome/free-solid-svg-icons';
+import GlobalContext from '../context/MainContext';
 
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -9,11 +10,15 @@ function delay(ms) {
 
 const SendHamburger = () => {
     const [loading, setLoading] = useState(true);
-
+    const {sendBuyItems} = useContext(GlobalContext)
     useEffect(() => {
         async function fetchData() {
             await delay(4000); // Wait for 4 seconds
             setLoading(false); // Set loading to false after the delay
+            sendBuyItems("Savory Hamburger",8.27);
+            const shopbox = document.querySelector("#shopbox");
+            shopbox.classList.remove("h-0");
+            shopbox.classList.add("h-[300px]");
         }
 
         fetchData();
