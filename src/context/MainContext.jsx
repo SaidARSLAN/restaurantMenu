@@ -97,8 +97,10 @@ export  function Provider ({children}) {
           setShoppedList([...shoppedList,{"name":name,"price":price}])
           setBoughtName(name),
           setBoughtPrice(price);
+
     }
     useEffect(() => {
+      console.log(shoppedList,boughtPrice,total);
       setTotal(total + boughtPrice);
     },[boughtPrice])
 

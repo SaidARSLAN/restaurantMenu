@@ -40,7 +40,7 @@ const [explain,setExplain] = useState(foodExplainLists[0]);
         <div className='absolute bottom-24 left-[3%] lg:left-[3%] text-white flex flex-col space-y-4 px-4'>
             <h1 className='font-poppins text-4xl text-white lg:text-6xl'>{name}</h1>
             <p className='text-sm font-mulish text-white lg:text-xl lg:w-2/3'>{explain}</p>
-            <a href="#menu" className='text-lg bg-white w-[120px] text-black px-6 py-2 cursor-pointer font-poppins uppercase hover:bg-white hover:text-black duration-200'>Order</a>
+            <a href="#menu" className='text-lg bg-yellow-400 w-[120px] text-black px-6 py-2 cursor-pointer font-poppins uppercase hover:bg-white hover:text-black duration-200'>Order</a>
         
         </div>
 
