@@ -27,7 +27,7 @@ const Nav = () => {
   }
 
   return (
-    <header className='flex fixed lg:static z-10 lg:z-0 w-full shadow-xl justify-between lg:px-16 px-8  bg-yellow-400 h-[100px] items-center'>
+    <header className='flex fixed  z-10  w-full shadow-xl justify-between lg:px-16 px-8  bg-yellow-400 h-[100px] items-center'>
         <h3 className='text-3xl font-poppins tracking-wider cursor-pointer w-1/3 flex space-x-4'>
             <FontAwesomeIcon icon={faHamburger}></FontAwesomeIcon><div className='flex'><span>Coca</span><span>Food</span></div>
         </h3>
