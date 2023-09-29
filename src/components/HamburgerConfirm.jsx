@@ -19,12 +19,12 @@ const HamburgerConfirm = () => {
   return (
     <div className='my-2 flex flex-col'>
         <div className='flex space-x-8 my-2'>
-        <h1 className='text-sm font-poppins'>{data.hamburgerName}</h1>
-        <p className='text-sm font-mulish'>{data.meat}</p>
-        <p className='text-sm font-mulish'>{data.cheese}</p>
-        <p className='text-sm font-mulish'>{data.salad}</p>
-        <p className='text-sm font-mulish'>{data.tomato}</p>
-        <p className='text-sm font-mulish'>{data.onion}</p>
+        <h1 className='text-lg font-poppins'>{data.hamburgerName}</h1>
+        <p className='text-sm font-bold font-mulish flex flex-col space-y-2 text-center'><span className='text-sm font-poppins'>Meat</span><span>{data.meat === "" ? "Meat" : data.meat}</span></p>
+        <p className='text-sm font-bold font-mulish flex flex-col space-y-2 text-center'><span className='text-sm font-poppins'>Cheese</span><span>{data.cheese === "" ? "Cheedar" : data.cheese}</span></p>
+        <p className='text-sm font-bold font-mulish flex flex-col space-y-2 text-center'><span className='text-sm font-poppins'>Salad</span><span>{data.salad === "on" ? "Yes" : "No"}</span></p>
+        <p className='text-sm font-bold font-mulish flex flex-col space-y-2 text-center'><span className='text-sm font-poppins'>Tomato</span><span>{data.tomato === "on" ? "Yes" : "No"}</span></p>
+        <p className='text-sm  font-bold font-mulish flex flex-col space-y-2 text-center'><span className='text-sm font-poppins'>Onion</span><span>{data.onion === "on" ? "Yes" : "No"}</span></p>
         </div>
         <form className='flex space-x-2 items-center justify-center'>
             <input type='checkbox' className='h-4 w-8' onClick={e => setConfirm(e.target.value)}></input>
