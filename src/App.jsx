@@ -9,7 +9,7 @@ function App() {
 
   return (
     <Provider>
-    <main className='relative'>
+    <main className='relative overflow-x-hidden'>
       <HiddenNavbar />  
       <Nav />
       <section>
