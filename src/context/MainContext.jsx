@@ -1,6 +1,5 @@
-import axios from "axios";
 import { createContext, useEffect, useState } from "react";
-
+import menudata from '../../api/db.json'
 
 const GlobalContext = createContext();
 
@@ -36,9 +35,8 @@ export  function Provider ({children}) {
         }
       }
 
-    const getMenuFromData = async () => {
-        const request = await axios.get("http://localhost:3000/menu");
-        setMenu(request.data);
+    const getMenuFromData =  () => {
+        setMenu(menudata.menu);
     }
     
       const createFilterMenu = () => {
