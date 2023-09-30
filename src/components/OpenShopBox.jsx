@@ -34,7 +34,7 @@ const handleIncrease = () => {
     setTotal(total + parseFloat(currentPrice))
 }
   return (
-    <div className='bg-yellow-400  h-0 overflow-auto flex absolute top-24 right-4 z-50 lg:right-36 lg:top-[100.3999px] lg:w-[250px] shadow-lg shadow-black duration-300' id='shopbox'>
+    <div className='bg-yellow-400  h-0 overflow-auto flex absolute top-24 right-4 z-50 lg:right-36 lg:top-[100.3999px] lg:w-[250px] w-[250px] shadow-lg shadow-black duration-300' id='shopbox'>
             {loading ? <div className='flex flex-col w-full h-full px-2 py-4 space-y-2 items-center justify-center'>
             <FontAwesomeIcon icon={faSpinner} className='animate-spin w-1/3 lg:w-2/3 my-4 h-10'></FontAwesomeIcon>
             </div> : <div className='flex flex-col w-full h-full px-2 py-4 space-y-2'>
